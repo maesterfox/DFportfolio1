@@ -4,19 +4,24 @@
   "description": "My Portfolio",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maesterfox/DFportfolio1.git"
   },
   "keywords": [
-    "portfolio"
+    "Portfolio",
+    "Web",
+    "Developement"
   ],
   "author": "David Fox",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/maesterfox/DFportfolio1/issues"
   },
-  "homepage": "https://github.com/maesterfox/DFportfolio1#readme"
+  "homepage": "https://github.com/maesterfox/DFportfolio1",
+  "dependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
