@@ -1,0 +1,12 @@
+{
+    "name": "davidfox/portfolio",
+    "description": "Setting up portfolio email form",
+    "autoload": {
+        "psr-4": {
+            "DFportfolio1\\": "php"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

@@ -5,10 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Fox - Portfolio</title>
+    <link rel="icon" href="./assets/home.png">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
+</head>
+
+  
   <body>
+
+    
+    <!------------------------ Nav ------------------------>
+
     <nav id="desktop-nav">
       <div class="logo">David Fox</div>
       <div>
@@ -20,7 +34,7 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
+    <nav id="hamburger-nav" role="navigation" aria-label="Mobile navigation">
       <div class="logo">David Fox</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -28,14 +42,19 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
     </nav>
+    
+
+
+    <!------------------Profile Section ----------------------------->
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profpic1.png" alt="David Fox profile picture" />
@@ -55,34 +74,32 @@
             Contact Info
           </button>
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/davidfoxtechcode'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/maesterfox/'"
-          />
-        </div>
+        <div class="socials">
+        <!-- Email Icon - Triggers Modal -->
+<i class="fa fa-envelope icon email-icon" data-bs-toggle="modal" data-bs-target="#contactModal"></i>
+
+<!-- LinkedIn Icon -->
+<i class="fa fa-linkedin icon linkedin-icon"></i>
+
+<!-- GitHub Icon -->
+<i class="fa fa-github icon github-icon"></i>
+</div>
+      
       </div>
+      
+      
+      <!------------------------ About ------------------------------>
+
+
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
+          <div class="text-container">
+            <p>I'm a Full-stack Junior Developer from Edinburgh, UK. My coding passion ignited in the world of Warcraft, where I created game add-ons using LUA. Before tech, I was a personal trainer in the USA, valuing mental well-being as much as physical fitness. Embracing remote work, I pursued a coding traineeship with IT Career Switch, transitioning my career into technology. Outside coding, I'm an active gym enthusiast, an Arsenal fan, and love immersing myself in the stories of 'Lord of the Rings', 'Marvel', and 'Star Wars'. I'm keen on applying my coding skills in real-world projects and eager for collaborative opportunities in the tech world.</p>
+        </div>
           <div class="about-containers">
             <div class="details-container">
               <img
@@ -112,11 +129,6 @@
 
             </div>
           </div>
-          <div class="text-container">
-            <p>
-              A coder by day, explorer by nature. When I'm not crafting digital solutions, I'm exploring the world, watching, and breaking a sweat in the gym. My coding journey started in the virtual world of Warcraft, where I dabbled in LUA to create my own game addons. From pixels to code, I'm all about pushing boundaries and embracing the thrill of discovery. Join me on this exciting quest of code and adventure!
-            </p>
-          </div>
         </div>
       </div>
       <img
@@ -126,6 +138,10 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+
+<!---------------------------------- Experience --------------------------------->
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -282,82 +298,150 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!---------------------------- Projects ----------------------------->
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+          <!-- First Project -->
           <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/gaz.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
             <h2 class="experience-sub-title project-title">Map App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/maesterfox/gaz.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://davidfoxdev.co.uk/gaz/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+              <div class="article-container hover-container">
+                  <!-- Trigger Modal for Project 1 -->
+                  <img src="./assets/gaz.jpg" alt="Project 1" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                  <!-- Project 1 Modal -->
+                  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="projectModalLabel1">Map App</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <p>A geolocation-based application</p>
+                                  <ul class="overlay-stack">
+                                      <li>HTML</li>
+                                      <li>CSS</li>
+                                      <li>JavaScript</li>
+                                      <li>Leaflet.js</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Rest of your project details like GitHub and Live Demo links -->
           
-    </section>
+  
+          <!-- Second Project -->
+          <h2 class="experience-sub-title project-title">bookStore</h2>
+
+              <div class="article-container hover-container">
+                  <!-- Trigger Modal for Project 2 -->
+                  <img src="./assets/project-2.jpg" alt="bookStore" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                  <!-- Project 2 Modal -->
+                  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="projectModalLabel2">bookStore</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <p>An online bookstore</p>
+                                  <ul class="overlay-stack">
+                                      <li>JavaScript</li>
+                                      <li>Bootstrap</li>
+                                      <li>CSS</li>
+                                      <li>HTML</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Rest of your project details like GitHub and Live Demo links -->
+          </div>
+      </div>
+  </section>
+  
+
+    <!-------------------------------- Contact Section ----------------------------->
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
+        <!-- Email Icon Container - Triggers Modal -->
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:david.fox@davidfoxdev.co.uk">Email</a></p>
+            <div class="icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" title="Email">
+                <i class="fa fa-envelope icon contact-icon email-icon"></i>
+            </div>
         </div>
+    
+        <!-- LinkedIn Icon Container -->
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/davidfoxtechcode">LinkedIn</a></p>
+            <a href="https://www.linkedin.com/in/davidfoxtechcode" class="icon-container" title="LinkedIn">
+                <i class="fa fa-linkedin icon contact-icon linkedin-icon"></i>
+            </a>
         </div>
+    
+        <!-- GitHub Icon Container -->
+        <div class="contact-info-container">
+            <a href="https://github.com/maesterfox/" class="icon-container" title="GitHub">
+                <i class="fa fa-github icon contact-icon github-icon"></i>
+            </a>
+        </div>
+    
+        <!-- Stack Overflow Icon Container -->
+        <div class="contact-info-container">
+            <a href="https://stackoverflow.com/users/22631288/david-fox" target="_blank" rel="noopener noreferrer" class="icon-container" title="Stack Overflow">
+                <i class="fa fa-stack-overflow icon contact-icon stack-overflow-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <!--------------------------- Email Modal ------------------------------->
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <!-- Contact Form -->
+                  <form id="contactForm" enctype="multipart/form-data">
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" name="email" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                      </div>
+                      <div class="mb-3">
+                          <label for="attachment" class="form-label">Attachment (Optional)</label>
+                          <input type="file" class="form-control" id="attachment" name="attachment">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+          </div>
       </div>
+  </div>
+
+
+    <!--------------------------------- Footer Section ------------------------------>
+    
     </section>
     <footer>
       <nav>
@@ -372,6 +456,14 @@
       </nav>
       <p>Copyright &#169; 2023 Fox Web Design. All Rights Reserved.</p>
     </footer>
+    
+     <!-- Include jQuery -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Include Bootstrap JS -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
+  </script>
     <script src="script.js"></script>
   </body>
+  
 </html>
