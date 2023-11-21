@@ -56,15 +56,10 @@ nav {
 }
 
 .logo {
-  font-size: 2rem; /* 2rem remains as is */
+  font-size: 3rem; /* 2rem remains as is */
   text-shadow: 0 0 1px black, 0 0 1px rgb(54, 54, 54), 0 0 1px rgb(130, 130, 130);
 }
 
-.span {
-  font-size: 2.4rem; /* 2.4rem remains as is */
-  font-style: italic;
-  color: rgb(29, 28, 9);
-}
 
 .logo:hover {
   cursor: default;
@@ -72,7 +67,13 @@ nav {
 
 /* HAMBURGER MENU */
 #hamburger-nav {
-  display: none;
+  position: fixed; /* Makes the hamburger menu fixed */
+  top: 0; /* Positions it at the top of the page */
+  width: 100%; 
+  height: 5rem;
+  background: rgb(134, 125, 109); /* Adds a background color, you can change this */
+  z-index: 1000; /* Ensures the menu stays on top of other elements */
+  /* opacity: 0.9; */
 }
 
 #hamburger-nav h1 {
@@ -104,7 +105,7 @@ nav {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: rgb(255, 255, 255); /* Adjust background to match theme */
+  background-color: rgb(134, 125, 109); /* Adjust background to match theme */
   display: inline-block; /* or use 'inline-flex' if it's a flex container */
   max-height: 0;
   overflow: hidden;
@@ -114,16 +115,17 @@ nav {
 
 .menu-links a {
   display: block;
-  padding: 0.625em; /* 10px / 16px */
-  text-align: center;
-  font-size: 1.5rem; /* 1.5rem remains as is */
-  color: black; /* Ensure this is visible on the dropdown background */
+  padding: 0.625em;
+  margin: 0,625em;
+  text-align: right;
+  font-size: 1.8rem; /* 1.5rem remains as is */
+  color: rgba(43, 28, 10, 0.623); /* Ensure this is visible on the dropdown background */
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .menu-links a:hover {
-  color: rgb(50, 50, 50); /* Adjust hover color for better visibility */
+  color: rgb(231, 231, 231); /* Adjust hover color for better visibility */
 }
 
 .menu-links li {
@@ -154,21 +156,13 @@ a {
   text-shadow: 0 0 1px black, 0 0 1px rgb(54, 54, 54), 0 0 1px rgb(130, 130, 130);
 }
 
-/* Existing hover effect for links */
-a:hover {
-  color: rgb(255, 253, 253);
-  text-decoration: none;
-  text-decoration-color: rgb(221, 221, 221);
+
+
+.logo span {
+  color: rgb(61, 42, 22);
+  font-size: 1.2em;
 }
 
-#desktop-nav .nav-links a {
-  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for color and text-shadow */
-}
-
-#desktop-nav .nav-links a:hover {
-  color: white; /* Change text color to white */
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
-}
 
 
 
@@ -179,7 +173,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh; /* vh unit for responsiveness */
+  padding-top: 15vh; /* vh unit for responsiveness */
   height: 96vh; /* vh unit for responsiveness */
   margin: 0 10rem; /* rem unit for consistent scaling */
   box-sizing: border-box;
@@ -313,7 +307,9 @@ section {
 /* ABOUT SECTION */
 
 #about {
+  margin-top: 10rem;
   position: relative;
+  font-size: 1.3rem;
 }
 
 #about h1 {
@@ -322,12 +318,11 @@ section {
 
 .about-containers {
   gap: 2rem; /* 2rem remains as is for consistent scaling */
-  margin-bottom: 2rem; /* 2rem remains as is */
-  margin-top: 2rem; /* 2rem remains as is */
   flex-wrap: wrap;
 }
 
 .about-details-container {
+  margin-top: 10rem; /* 2rem remains as is */
   justify-content: center;
   flex-direction: column;
 }
@@ -335,6 +330,7 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  margin-top: 3rem;
 }
 
 .arrow {
@@ -353,6 +349,16 @@ section {
   text-align: center;
 }
 
+.details-container2 {
+  padding: 1.5rem; /* 1.5rem remains as is for consistent padding */
+  flex: 2;
+  background: rgb(216, 214, 201);
+  border-radius: 2rem; /* 2rem remains as is for border-radius */
+  border: rgb(53, 53, 53) 0.1rem solid; /* 0.1rem remains as is */
+  border-color: rgb(216, 214, 201);
+  text-align: center;
+}
+
 .details-container p span {
   font-weight: 700;
   color: rgb(41, 41, 41);
@@ -364,7 +370,7 @@ section {
   height: 80%; /* Percentage value for responsiveness */
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 #experience {
   position: relative;
 }
@@ -408,25 +414,32 @@ article .icon {
   height: auto; /* Maintain aspect ratio */
 }
 
+.expCV {
+  background-color: rgba(105, 94, 77, 1); /* Dark brown background */
+  color: rgba(233, 229, 218, 1); /* Light color text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 3px rgba(105, 94, 77, 1);
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block display */
+  font-size: 36px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition-duration: 0.4s; /* Transition effect */
+}
+
+.expCV:hover {
+  background-color: rgb(182, 164, 131); /* Slightly lighter brown on hover */
+  color: rgb(48, 46, 40); /* Maintaining light color text */
+}
 
 
 /* PROJECTS SECTION */
-
-.details-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the content */
-}
-
-.project-img {
-  max-width: 100%; /* Ensure image doesn't exceed container width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 2rem;
-}
-
-
 #projects {
   position: relative;
+  text-align: center; /* Centers the content of the entire section */
 }
 
 #projects h1 {
@@ -439,27 +452,48 @@ article .icon {
   background: rgb(216, 214, 201);
 }
 
+.details-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap in a grid layout */
+  justify-content: center; /* Centers items horizontally */
+  gap: 2rem; /* Spacing between items */
+  width: 100%;
+}
+
+.project-item {
+  flex: 1 0 calc(33% - 2rem); /* Adjust width for 3 items per row considering the gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px; /* Adjust as needed */
+}
+
 .project-img {
+  width: 18rem; /* Full width of its container */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 2rem;
-  width: 80%;
-  height: 80%;
   transition: transform 0.3s ease; /* Smooth transform on hover */
 }
 
-
 .project-title {
-  margin: 1rem;
-  color: black;
   text-align: center; /* Center the project title */
+  margin-bottom: 1rem; /* Spacing below the title */
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-  text-decoration: none; /* Remove underline from links */
-  display: inline-block; /* Align buttons in line */
-  margin: 0.5rem; /* Space out buttons */
+@media (max-width: 768px) {
+  .project-item {
+    flex-basis: calc(50% - 2rem); /* 2 items per row on smaller screens */
+  }
 }
+
+@media (max-width: 480px) {
+  .project-item {
+    flex-basis: 100%; /* 1 item per row on very small screens */
+  }
+}
+
+
+
 
 /* Custom Modal Styling */
 .modal-content {
@@ -493,26 +527,22 @@ article .icon {
   color: rgba(216, 214, 201); /* Button color */
 }
 
-/* Additional styling for modal content */
-.modal-content {
-  color: rgb(50, 50, 50); /* Text color for modal content */
-  font-family: "Poppins", sans-serif; /* Consistent font family */
-  border-radius: 0.5rem; /* Rounded corners for the modal */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+/* New Tech Stack Container Styling */
+.tech-stack-container {
+  background-color: rgb(105, 94, 77); /* Same as modal-header */
+  color: rgba(216, 214, 201); /* Adjust text color as needed */
+  padding: 1rem; /* Add some padding */
+  border-radius: 0.5rem; /* Optional: rounded corners */
+  margin-top: 1rem; /* Space from the previous content */
 }
 
-.modal-body {
-  background-color: rgba(233, 229, 218, 0.95); /* Light background color from site palette */
-  padding: 20px; /* Spacing around content */
-}
-
-
-.modal-body .overlay-stack {
+/* Adjusting the styles for the list inside the new container */
+.tech-stack-container .overlay-stack {
   list-style-type: none; /* Remove default list styling */
   padding: 0;
 }
 
-.modal-body .overlay-stack li {
+.tech-stack-container .overlay-stack li {
   margin: 0.25rem 0; /* Space between stack items */
   font-size: 1rem; /* Consistent font size */
 }
@@ -654,10 +684,7 @@ footer p {
 
 
 @media screen and (max-width: 1400px) {
-  
-  body {
-    display: inline-block;
-  }
+ 
 
   #experience {
     margin-top: 20rem;    
@@ -668,7 +695,7 @@ footer p {
   }
 
   #projects {
-    margin-top: 50rem;    
+    margin-top: 30rem;    
   }
 
   #contact {
@@ -721,7 +748,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   #contact,
   footer {
     margin-top: 5rem;
@@ -845,4 +872,94 @@ footer p {
   
 }
 
+}
+
+@media screen and (max-height: 800px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 5rem;
+  }
+
+  #projects {
+    margin-top: 5rem;    
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: auto;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 25em;
+    height: 25em;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .about-details-container {
+    margin-top: 5rem;    
+  }
+  #contact {
+    margin-top: 5rem;    
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 5rem;
+  }
+
+  #projects {
+    margin-top: 5rem;    
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: auto;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 25em;
+    height: 25em;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  .about-details-container {
+    margin-top: 5rem;    
+  }
+  #contact {
+    margin-top: 5rem;    
+  }
 }

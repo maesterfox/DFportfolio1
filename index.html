@@ -23,19 +23,8 @@
     
     <!------------------------ Nav ------------------------>
 
-    <nav id="desktop-nav">
-      <div class="logo">David Fox</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
     <nav id="hamburger-nav" role="navigation" aria-label="Mobile navigation">
-      <div class="logo">David Fox</div>
+      <div class="logo"><span>D</span>avid <span>F</span>ox</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -44,7 +33,7 @@
         </div>
         <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
@@ -86,12 +75,12 @@
 </div>
       
       </div>
-      
-      
-      <!------------------------ About ------------------------------>
 
 
     </section>
+
+    <!------------------------- About ---------------------------->
+    
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -101,33 +90,62 @@
             <p>I'm a Full-stack Junior Developer from Edinburgh, UK. My coding passion ignited in the world of Warcraft, where I created game add-ons using LUA. Before tech, I was a personal trainer in the USA, valuing mental well-being as much as physical fitness. Embracing remote work, I pursued a coding traineeship with IT Career Switch, transitioning my career into technology. Outside coding, I'm an active gym enthusiast, an Arsenal fan, and love immersing myself in the stories of 'Lord of the Rings', 'Marvel', and 'Star Wars'. I'm keen on applying my coding skills in real-world projects and eager for collaborative opportunities in the tech world.</p>
         </div>
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+
+            <!-- Education Container (Unchanged) -->
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>IT Career Switch - <span>Coding Traineeship</p>
+            <p>Codecademy - <span>Full-Stack Engineer</span></p>
+            <p>Codecademy - <span>jQuery</span></p>
+            <p>Codecademy - <span>React</span></p>
+            <p>Codecademy - <span>PHP</span></p>
+            <p>Codecademy - <span>Bootstrap</span></p>
+            <p>Learning Curve - <span>Level 2 Coding</span></p>
+
+
+
+          </div>
+
+            <div class="details-container2">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
-              <p>2 years <br />Full-Stack Developer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>IT Career Switch - <span>Coding Traineeship</p>
-              <p>Codecademy - <span>Full-Stack Engineer</span></p>
-              <p>Codecademy - <span>jQuery</span></p>
-              <p>Codecademy - <span>React</span></p>
-              <p>Codecademy - <span>PHP</span></p>
-              <p>Codecademy - <span>Bootstrap</span></p>
-              <p>Learning Curve - <span>Level 2 Coding</span></p>
+              <div class="experience-list">
+                  <!-- Professional Experience 1 -->
+                  <p><strong>Financial Services Adviser (Remote)</strong> <br> Capita (Aviva), Edinburgh, Scotland</p>
+                  <p><span>June 2022 – April 2023</span></p>
+                  
 
+                  <!-- Professional Experience 2 -->
+                  <p><strong>Retention and Sales Advisor (Remote)</strong> <br> Adecco (Centrica), Glasgow, Scotland</p>
+                  <p><span>September 2021 – May 2022</span></p>
+                  
 
+                  <!-- Professional Experience 3 -->
+                  <p><strong>Customer Service Associate (Remote)</strong> <br> Adecco (Amazon), Edinburgh, Scotland</p>
+                  <p><span>June 2020 – February 2021</span></p>
+                  
 
-            </div>
+                  <!-- Professional Experience 4 -->
+                  <p><strong>Customer Service Rep</strong> <br>Webhelp (Sky Mobile), Larbert, Scotland</p>
+                  <p><span>June 2019 – May 2020</span></p>
+
+                  <button class="expCV"
+            class="btn btn-color-2"
+            onclick="window.open('./assets/davidfoxcv.pdf')"
+          >
+            Download CV
+          </button>
+                  
+                  
+              </div>
+          </div>
+
+          
           </div>
         </div>
       </div>
@@ -140,14 +158,14 @@
     </section>
 
 
-<!---------------------------------- Experience --------------------------------->
+<!---------------------------------- Skills --------------------------------->
 
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div class="details-container2">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
@@ -180,7 +198,7 @@
                 />
                 <div>
                   <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -213,12 +231,12 @@
                 />
                 <div>
                   <h3>Bootstrap</h3>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
             </div>
           </div>
-          <div class="details-container">
+          <div class="details-container2">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
@@ -229,7 +247,7 @@
                 />
                 <div>
                   <h3>Python</h3>
-                  <p>Experienced</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -283,8 +301,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Basic</p>
+                  <h3>jQuery</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
@@ -304,69 +322,156 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-          <!-- First Project -->
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">Map App</h2>
-              <div class="article-container hover-container">
-                  <!-- Trigger Modal for Project 1 -->
-                  <img src="./assets/gaz.jpg" alt="Project 1" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal1">
-                  <!-- Project 1 Modal -->
-                  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <h5 class="modal-title" id="projectModalLabel1">Map App</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                  <p>A geolocation-based application</p>
-                                  <ul class="overlay-stack">
-                                      <li>HTML</li>
-                                      <li>CSS</li>
-                                      <li>JavaScript</li>
-                                      <li>Leaflet.js</li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              <!-- Rest of your project details like GitHub and Live Demo links -->
-          
   
-          <!-- Second Project -->
-          <h2 class="experience-sub-title project-title">bookStore</h2>
+      <div class="details-container color-container">
+        <div class="project-item">
 
-              <div class="article-container hover-container">
-                  <!-- Trigger Modal for Project 2 -->
-                  <img src="./assets/project-2.jpg" alt="bookStore" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal2">
-                  <!-- Project 2 Modal -->
-                  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <h5 class="modal-title" id="projectModalLabel2">bookStore</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                  <p>An online bookstore</p>
-                                  <ul class="overlay-stack">
-                                      <li>JavaScript</li>
-                                      <li>Bootstrap</li>
-                                      <li>CSS</li>
-                                      <li>HTML</li>
-                                  </ul>
-                              </div>
+          <!-- Trigger Modal for Project 1 -->
+          <img src="./assets/gaz.jpg" alt="Project 1" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal1">
+          <!-- Project 1 Modal -->
+          <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h2 class="modal-title" id="projectModalLabel1">Gazetteer 🌍</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Created as part of my IT Career Switch traineeship, Gazetteer is a cutting-edge mapping application designed with a "mobile-first" approach. Built on a robust stack of modern web technologies, it provides real-time profiling for countries around the world, offering demographic, climatic, and various other types of data. Ideal for researchers, travelers, and geography enthusiasts.</p>
+
+                        <ul>
+                          <li><strong>Real-Time Map Updates</strong> 🌍: The app continuously updates maps to provide the latest information.</li>
+                          <li><strong>Mobile Responsiveness</strong> 📱: Enjoy a seamless experience across all mobile devices.</li>
+                          <li><strong>Custom API Handling</strong> 🛠️: The app skillfully handles custom APIs for enhanced functionality.</li>
+                          <li><strong>Layer Control for Maps</strong> 🗺️: Toggle between different map layers for varied perspectives.</li>
+                        </ul>
+                          <div class="tech-stack-container">
+                            <h3>Tech Stack</h3>
+                          <ul class="overlay-stack">
+                              <li>HTML/CSS</li>
+                              <li>JavaScript</li>
+                              <li>PHP</li>
+                              <li>Leaflet.js</li>
+                              <li>API</li>
+                          </ul>
+                      </div>
+                      <a href="https://davidfoxdev.co.uk/gaz" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-3">Visit Gazetteer</a>
+
+                  </div>
+              </div>
+          </div>
+      </div>                      
+    </div>
+
+  
+      <!-- Second Project -->
+      <div class="project-item">
+          <!-- Trigger Modal for Project 2 -->
+          <img src="./assets/compdir.jpg" alt="Comppany Directory" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal2">
+          <!-- Project 2 Modal -->
+          <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h2 class="modal-title" id="projectModalLabel2">Company Directory 📁</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Created as part of my IT Career Switch traineeship, this web application 🌐 efficiently manages company personnel databases, illustrating organizational hierarchies, employee reporting lines, and locations. It’s responsive across desktop 💻 and mobile 📱 platforms.</p>
+                        <ul>
+                          <li><strong>Add, Edit, and Delete Personnel Records</strong>: Users can effortlessly manage employee information, keeping the database up-to-date and accurate.</li>
+                          <li><strong>View Personnel by Department and Location</strong>: Offers a structured view of employees, sorted by their department and workplace, enhancing organizational oversight.</li>
+                          <li><strong>Search Personnel Records</strong>: A powerful search feature that allows quick retrieval of specific employee details.</li>
+                        </ul>  <div class="tech-stack-container">
+                            <h3>Tech Stack</h3>
+                          <ul class="overlay-stack">
+                              <li>HTML/CSS</li>
+                              <li>JavaScript</li>
+                              <li>Bootstrap</li>
+                              <li>jQuery</li>
+                              <li>PHP</li>
+                              <li>MySQL/MariaDB</li>
+                          </ul>
+                      </div>
+                      <a href="https://davidfoxdev.co.uk/compdirect" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-3">Visit Company Directory</a>
+
+                  </div>
+              </div>
+          </div>
+      </div>                      </div>
+
+
+  <!-- Third Project -->
+  <div class="project-item">
+          <!-- Trigger Modal for Project 3 -->
+          <img src="./assets/bookstore.jpg" alt="Project 1" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal3">
+          <!-- Project 1 Modal -->
+          <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h2 class="modal-title" id="projectModalLabel3">bookStore 📚</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+<p>bookStore is a simply crafted single-page web application that revolutionizes the way users discover free books online. Whether you're in search of a classic PDF or an engaging audiobook, bookStore makes your search effortless and efficient. Harnessing the power of the Google Books API, it offers a comprehensive search functionality, allowing users to find books by author, title, or genre through an intuitive dropdown menu. The heart of bookStore lies in its dynamic results table, which not only populates in real-time with selections from the API but also presents vital information at a glance - book covers, concise titles, and captivating summaries limited to 100 characters, with an option to delve deeper through a "Read More" feature. </p>
+                          <div class="tech-stack-container">
+                            
+                            <h3>Tech Stack</h3>
+                          <ul class="overlay-stack">
+                              <li>HTML</li>
+                              <li>PHP</li>
+                              <li>JavaScript</li>
+                              <li>SCSS</li>
+                              <li>API</li>
+                          </ul>
+                      </div>
+                      <a href="https://davidfoxdev.co.uk/bookstore" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-3">Visit bookStore</a>
+
+                  </div>
+              </div>
+          </div></div>                      </div>
+
+
+        <!-- Fourth Project -->
+        <div class="project-item">
+              <!-- Trigger Modal for Project 4 -->
+              <img src="./assets/betbuild.jpg" alt="Project 4" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal4">
+              <!-- Project 1 Modal -->
+              <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h2 class="modal-title" id="projectModalLabel4">Football Match Predictor ⚽</h2>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
+                          <div class="modal-body">
+                            <p>Delve into the <strong>Football Match Prediction Website</strong>, a specialized web application designed for football (soccer) enthusiasts eager to predict match outcomes. This innovative platform 🌐 is equipped with:</p>
+
+                            <ul>
+                              <li><strong>Dynamic Match Input Generation</strong> 🔄: Set the stage for your predictions by specifying the number of matches. The app intelligently generates corresponding input fields, offering a tailored forecasting experience.</li>
+                              <li><strong>Team Data Fetching</strong> 📊: Gain a competitive edge with up-to-date SQL database. The app fetches key team data such as strength, average goals scored, and conceded, all sourced reliably from a PHP backend.</li>
+                            </ul>                              
+                              <div class="tech-stack-container">
+                                
+                                <h3>Tech Stack</h3>
+                              <ul class="overlay-stack">
+                                  <li>HTML</li>
+                                  <li>CSS</li>
+                                  <li>JavaScript</li>
+                                  <li>PHP</li>
+                                  <li>JQuery</li>
+                                  <li>SQL</li>
+                              </ul>
+                          </div>
+                          <a href="https://davidfoxdev.co.uk/logandreg/game" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-3">Visit Bet Builder</a>
+
                       </div>
                   </div>
               </div>
-              <!-- Rest of your project details like GitHub and Live Demo links -->
-          </div>
-      </div>
-  </section>
+              </div>                      </div>
+
+            </section>
   
 
     <!-------------------------------- Contact Section ----------------------------->
@@ -383,25 +488,26 @@
         </div>
     
         <!-- LinkedIn Icon Container -->
-        <div class="contact-info-container">
-            <a href="https://www.linkedin.com/in/davidfoxtechcode" class="icon-container" title="LinkedIn">
-                <i class="fa fa-linkedin icon contact-icon linkedin-icon"></i>
-            </a>
-        </div>
-    
-        <!-- GitHub Icon Container -->
-        <div class="contact-info-container">
-            <a href="https://github.com/maesterfox/" class="icon-container" title="GitHub">
-                <i class="fa fa-github icon contact-icon github-icon"></i>
-            </a>
-        </div>
-    
-        <!-- Stack Overflow Icon Container -->
-        <div class="contact-info-container">
-            <a href="https://stackoverflow.com/users/22631288/david-fox" target="_blank" rel="noopener noreferrer" class="icon-container" title="Stack Overflow">
-                <i class="fa fa-stack-overflow icon contact-icon stack-overflow-icon"></i>
-            </a>
-        </div>
+<div class="contact-info-container">
+    <div class="icon-container linkedin-contact-icon" title="LinkedIn">
+        <i class="fa fa-linkedin icon contact-icon linkedin-icon"></i>
+    </div>
+</div>
+
+<!-- GitHub Icon Container -->
+<div class="contact-info-container">
+    <div class="icon-container github-contact-icon" title="GitHub">
+        <i class="fa fa-github icon contact-icon github-icon"></i>
+    </div>
+</div>
+
+<!-- Stack Overflow Icon Container -->
+<div class="contact-info-container">
+    <div class="icon-container stack-overflow-contact-icon" title="Stack Overflow">
+        <i class="fa fa-stack-overflow icon contact-icon stack-overflow-icon"></i>
+    </div>
+</div>
+
     </div>
 
     <!--------------------------- Email Modal ------------------------------->

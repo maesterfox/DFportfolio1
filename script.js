@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .querySelector(".fa-linkedin")
     .addEventListener("click", function (event) {
       event.stopPropagation();
-      window.location.href = "https://linkedin.com/in/davidfoxtechcode";
+      window.open("https://linkedin.com/in/davidfoxtechcode", "_blank");
     });
 
   // GitHub Icon
@@ -50,14 +50,43 @@ document.addEventListener("DOMContentLoaded", function () {
     .querySelector(".fa-github")
     .addEventListener("click", function (event) {
       event.stopPropagation();
-      window.location.href = "https://github.com/maesterfox/";
+      window.open("https://github.com/maesterfox/", "_blank");
     });
 
+  // Stack Overflow Icon
   document
     .querySelector(".fa-stack-overflow")
     .addEventListener("click", function (event) {
       event.stopPropagation();
-      window.location.href =
-        "https://stackoverflow.com/users/22631288/david-fox";
+      window.open(
+        "https://stackoverflow.com/users/22631288/david-fox",
+        "_blank"
+      );
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // LinkedIn Icon in Contact Section
+  document
+    .querySelector(".linkedin-contact-icon")
+    .addEventListener("click", function () {
+      window.open("https://linkedin.com/in/davidfoxtechcode", "_blank");
+    });
+
+  // GitHub Icon in Contact Section
+  document
+    .querySelector(".github-contact-icon")
+    .addEventListener("click", function () {
+      window.open("https://github.com/maesterfox/", "_blank");
+    });
+
+  // Stack Overflow Icon in Contact Section
+  document
+    .querySelector(".stack-overflow-contact-icon")
+    .addEventListener("click", function () {
+      window.open(
+        "https://stackoverflow.com/users/22631288/david-fox",
+        "_blank"
+      );
     });
 });
