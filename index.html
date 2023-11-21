@@ -328,7 +328,8 @@
 
           <!-- Trigger Modal for Project 1 -->
           <img src="./assets/gaz.jpg" alt="Project 1" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal1">
-          <!-- Project 1 Modal -->
+                    <h3 class="project-title">Gazetteer</h3>  
+<!-- Project 1 Modal -->
           <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
@@ -366,9 +367,11 @@
   
       <!-- Second Project -->
       <div class="project-item">
+
           <!-- Trigger Modal for Project 2 -->
           <img src="./assets/compdir.jpg" alt="Comppany Directory" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal2">
-          <!-- Project 2 Modal -->
+                  <h3 class="project-title">Company Directory</h3>  <!-- Added project title here -->
+<!-- Project 2 Modal -->
           <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
@@ -403,9 +406,11 @@
 
   <!-- Third Project -->
   <div class="project-item">
+
           <!-- Trigger Modal for Project 3 -->
           <img src="./assets/bookstore.jpg" alt="Project 1" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal3">
-          <!-- Project 1 Modal -->
+              <h3 class="project-title">bookStore</h3>  <!-- Added project title here -->
+<!-- Project 1 Modal -->
           <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
@@ -435,9 +440,12 @@
 
         <!-- Fourth Project -->
         <div class="project-item">
+
               <!-- Trigger Modal for Project 4 -->
               <img src="./assets/betbuild.jpg" alt="Project 4" class="project-img" data-bs-toggle="modal" data-bs-target="#projectModal4">
-              <!-- Project 1 Modal -->
+              
+              <h3 class="project-title">Match Predictor</h3>  <!-- Added project title here -->
+<!-- Project 1 Modal -->
               <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
                   <div class="modal-dialog">
                       <div class="modal-content">
@@ -474,81 +482,106 @@
             </section>
   
 
-    <!-------------------------------- Contact Section ----------------------------->
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <!-- Email Icon Container - Triggers Modal -->
-        <div class="contact-info-container">
-            <div class="icon-container" data-bs-toggle="modal" data-bs-target="#contactModal" title="Email">
-                <i class="fa fa-envelope icon contact-icon email-icon"></i>
-            </div>
-        </div>
-    
-        <!-- LinkedIn Icon Container -->
-<div class="contact-info-container">
-    <div class="icon-container linkedin-contact-icon" title="LinkedIn">
-        <i class="fa fa-linkedin icon contact-icon linkedin-icon"></i>
-    </div>
-</div>
-
-<!-- GitHub Icon Container -->
-<div class="contact-info-container">
-    <div class="icon-container github-contact-icon" title="GitHub">
-        <i class="fa fa-github icon contact-icon github-icon"></i>
-    </div>
-</div>
-
-<!-- Stack Overflow Icon Container -->
-<div class="contact-info-container">
-    <div class="icon-container stack-overflow-contact-icon" title="Stack Overflow">
-        <i class="fa fa-stack-overflow icon contact-icon stack-overflow-icon"></i>
-    </div>
-</div>
-
-    </div>
-
-    <!--------------------------- Email Modal ------------------------------->
-
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <!-- Contact Form -->
-                  <form id="contactForm" enctype="multipart/form-data">
-                      <div class="mb-3">
-                          <label for="name" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="name" name="name" required>
+            <section id="contact" class="contact">
+              <div class="contact-container">
+                <div class="section-title">
+                  <h2>Contact Me</h2>
+                  <p>Please complete the form below to get in touch with me.</p>
+                </div>
+            
+                <div class="contact-form-container">
+                  <form id="contactForm">
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
                       </div>
-                      <div class="mb-3">
-                          <label for="email" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="email" name="email" required>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
                       </div>
-                      <div class="mb-3">
-                          <label for="message" class="form-label">Message</label>
-                          <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-                      </div>
-                      <div class="mb-3">
-                          <label for="attachment" class="form-label">Attachment (Optional)</label>
-                          <input type="file" class="form-control" id="attachment" name="attachment">
-                      </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="attachment">Attachment (Optional)</label>
+                      <input type="file" id="attachment" name="attachment">
+                    </div>
+                    <div class="form-submit">
+                      <button type="submit">Submit Enquiry</button>
+                    </div>
                   </form>
+                </div>
               </div>
-          </div>
+            </section>
+            
+    
+    
+
+ <!-- Social Icons -->
+ <div class="contact-info-upper-container">
+      
+  
+  <!-- LinkedIn Icon Container -->
+  <div class="contact-info-container">
+      <div class="icon-container linkedin-contact-icon" title="LinkedIn">
+          <i class="fa fa-linkedin icon contact-icon linkedin-icon"></i>
       </div>
   </div>
+
+  <!-- GitHub Icon Container -->
+  <div class="contact-info-container">
+      <div class="icon-container github-contact-icon" title="GitHub">
+          <i class="fa fa-github icon contact-icon github-icon"></i>
+      </div>
+  </div>
+
+  <!-- Stack Overflow Icon Container -->
+  <div class="contact-info-container">
+      <div class="icon-container stack-overflow-contact-icon" title="Stack Overflow">
+          <i class="fa fa-stack-overflow icon contact-icon stack-overflow-icon"></i>
+      </div>
+  </div>
+</div>
+
+<!-- Success Message Modal -->
+<div id="successModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Success</h5>
+        <button type="button" title="successfully" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Your enquiry has been successfully sent!</p>
+        <p>I aim to reply within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Error Message Modal -->
+<div id="errorModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Error</h5>
+        <button type="button" title="failure" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>There was an error sending your message. Please try again later.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
     <!--------------------------------- Footer Section ------------------------------>
     
-    </section>
+    
     <footer>
       <nav>
         <div class="nav-links-container">

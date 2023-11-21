@@ -17,18 +17,18 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "./php/mailer.php", // The path to your PHP mailer script
+      url: "./php/mailer.php",
       data: formData,
       contentType: false,
       processData: false,
       success: function (response) {
-        // Handle success (e.g., showing a success message)
         console.log("Success:", response);
-        $("#contactModal").modal("hide"); // Hide the modal after submission
+        $("#successModal").modal("show"); // Show success modal
+        $("#contactForm").trigger("reset"); // Reset the form fields
       },
       error: function (error) {
-        // Handle error
         console.error("Error:", error);
+        $("#errorModal").modal("show"); // Show error modal
       },
     });
   });
