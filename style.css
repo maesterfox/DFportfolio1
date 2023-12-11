@@ -810,8 +810,9 @@ footer p {
   .section__text__p2,
   .title,
   article {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
+ 
 
   #experience .experience-details-container,
   #experience .about-containers {
@@ -827,15 +828,18 @@ footer p {
     width: 100%; 
     text-align: center; 
     margin-bottom: 1rem; 
-    font-size: 1.1rem;
-
+    font-size: 1.3rem;
   }
  
 
-  #experience article .icon {
-    width: 2rem; 
+  #experience article {
+    width: 7rem;
+    .icon {
+    width: 3rem; 
     height: auto; 
   }
+}
+ 
 
   .nav-links {
     flex-direction: column;

@@ -45,69 +45,53 @@
     </div>
     
     <!------------------------ Nav ------------------------>
-
-    <nav id="hamburger-nav" role="navigation" aria-label="Mobile navigation">
-      <div class="logo"><span>D</span>avid <span>F</span>ox</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+<nav id="hamburger-nav" role="navigation" aria-label="Mobile navigation">
+    <div class="logo" aria-label="Home"><span>D</span>avid <span>F</span>ox</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <ul class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#about" onclick="toggleMenu()" aria-label="About David Fox">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()" aria-label="David Fox Skills">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()" aria-label="David Fox Projects">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()" aria-label="Contact David Fox">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    
+    </div>
+</nav>
 
-
-    <!------------------Profile Section ----------------------------->
-
-    <section id="profile">
-      <div class="section__pic-container">
+<!------------------Profile Section ----------------------------->
+<section id="profile">
+    <div class="section__pic-container">
         <img src="./assets/profpic1.png" alt="David Fox profile picture" />
-      </div>
-      <div class="section__text">
-        <!-- <p class="section__text__p1">Hello, I'm</p> -->
+    </div>
+    <div class="section__text">
         <h1 class="title">David Fox</h1>
         <p class="section__text__p2">Full-Stack Developer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/davidfoxcv.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+            <button class="btn btn-color-2" onclick="window.open('./assets/davidfoxcv.pdf')" aria-label="Download David Fox CV">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'" aria-label="Go to Contact Information">Contact Info</button>
         </div>
         <div class="socials">
-
-<!-- LinkedIn Icon -->
-<i class="fa fa-linkedin icon linkedin-icon"></i>
-
-<!-- GitHub Icon -->
-<i class="fa fa-github icon github-icon"></i>
-</div>
-      
+          <a href="https://www.linkedin.com/in/davidfoxtechcode/" target="_blank" rel="noopener noreferrer" aria-label="David Fox on LinkedIn">
+              <i class="fa fa-linkedin icon linkedin-icon"></i>
+          </a>
+          <a href="https://github.com/maesterfox/" target="_blank" rel="noopener noreferrer" aria-label="David Fox on GitHub">
+              <i class="fa fa-github icon github-icon"></i>
+          </a>
       </div>
+      
+    </div>
+</section>
 
-
-    </section>
-
-    <!------------------------- About ---------------------------->
-    
-    <section id="about">
-      <!-- <p class="section__text__p1">Get To Know More</p> -->
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
+<!------------------------- About ---------------------------->
+<section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
         <div class="about-details-container">
-          <div class="text-container">
+            <div class="text-container">
             <p>I'm a Full-stack Junior Developer from Edinburgh, UK. My coding passion ignited in the 'World of Warcraft', where I created game add-ons using LUA. Before tech, I was a personal trainer in the USA, valuing mental well-being as much as physical fitness. Embracing remote work, I pursued a coding traineeship with IT Career Switch, transitioning my career into technology. Outside coding, I'm an active gym enthusiast, an Arsenal fan, and love immersing myself in the stories of 'Lord of the Rings', 'Marvel', and 'Star Wars'. I'm keen on applying my coding skills in real-world projects and eager for collaborative opportunities in the tech world.</p>
         </div>
           <div class="about-containers">
