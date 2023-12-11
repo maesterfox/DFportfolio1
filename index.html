@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="David Fox - Full Stack Developer. Discover my professional portfolio showcasing expertise in web development, including projects and contributions."/>
+    <meta name="keywords" content="Full Stack Developer, David Fox, Web Development, Software Engineering, JavaScript, React, Node.js"/>
+    <meta name="author" content="David Fox"/>
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="David Fox - Full Stack Developer's Portfolio"/>
+    <meta property="og:description" content="Explore David Fox's portfolio to see a range of innovative and skillfully executed web development projects."/>
+    <meta property="og:image" content="./assets/home.png"/>
+    <meta property="og:url" content="https://davidfoxdev.co.uk/"/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="David Fox - Full Stack Developer's Portfolio"/>
+    <meta name="twitter:description" content="David Fox's portfolio presents a professional journey through various web development projects, emphasizing modern technologies and creative solutions."/>
+    <meta name="twitter:image" content="./assets/home.png"/>
+    <meta name="twitter:site" content="@davidfoxtech"/>
+
     <title>David Fox - Portfolio</title>
     <link rel="icon" href="./assets/home.png">
     
@@ -17,9 +36,13 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
+
   
   <body>
 
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     
     <!------------------------ Nav ------------------------>
 
@@ -49,7 +72,7 @@
         <img src="./assets/profpic1.png" alt="David Fox profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+        <!-- <p class="section__text__p1">Hello, I'm</p> -->
         <h1 class="title">David Fox</h1>
         <p class="section__text__p2">Full-Stack Developer</p>
         <div class="btn-container">
@@ -64,8 +87,6 @@
           </button>
         </div>
         <div class="socials">
-        <!-- Email Icon - Triggers Modal -->
-<i class="fa fa-envelope icon email-icon" data-bs-toggle="modal" data-bs-target="#contactModal"></i>
 
 <!-- LinkedIn Icon -->
 <i class="fa fa-linkedin icon linkedin-icon"></i>
@@ -82,17 +103,17 @@
     <!------------------------- About ---------------------------->
     
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <!-- <p class="section__text__p1">Get To Know More</p> -->
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="about-details-container">
           <div class="text-container">
-            <p>I'm a Full-stack Junior Developer from Edinburgh, UK. My coding passion ignited in the world of Warcraft, where I created game add-ons using LUA. Before tech, I was a personal trainer in the USA, valuing mental well-being as much as physical fitness. Embracing remote work, I pursued a coding traineeship with IT Career Switch, transitioning my career into technology. Outside coding, I'm an active gym enthusiast, an Arsenal fan, and love immersing myself in the stories of 'Lord of the Rings', 'Marvel', and 'Star Wars'. I'm keen on applying my coding skills in real-world projects and eager for collaborative opportunities in the tech world.</p>
+            <p>I'm a Full-stack Junior Developer from Edinburgh, UK. My coding passion ignited in the 'World of Warcraft', where I created game add-ons using LUA. Before tech, I was a personal trainer in the USA, valuing mental well-being as much as physical fitness. Embracing remote work, I pursued a coding traineeship with IT Career Switch, transitioning my career into technology. Outside coding, I'm an active gym enthusiast, an Arsenal fan, and love immersing myself in the stories of 'Lord of the Rings', 'Marvel', and 'Star Wars'. I'm keen on applying my coding skills in real-world projects and eager for collaborative opportunities in the tech world.</p>
         </div>
           <div class="about-containers">
 
-            <!-- Education Container (Unchanged) -->
-          <div class="details-container">
+            <!-- Education Container  -->
+          <div class="details-container2">
             <img
               src="./assets/education.png"
               alt="Education icon"
@@ -104,12 +125,14 @@
             <p>Codecademy - <span>jQuery</span></p>
             <p>Codecademy - <span>React</span></p>
             <p>Codecademy - <span>PHP</span></p>
-            <p>Codecademy - <span>Bootstrap</span></p>
+            <p>Codecademy - <span>Python 3</span></p>
+            <p>Codecademy - <span>Command Line</span></p>
+            <p>Codecademy - <span>A-Frame</span></p>
             <p>Learning Curve - <span>Level 2 Coding</span></p>
 
-
-
           </div>
+
+            <!-- Work History Container -->
 
             <div class="details-container2">
               <img src="./assets/experience.png" alt="Experience icon" class="icon" />
@@ -149,28 +172,25 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      
     </section>
 
 
 <!---------------------------------- Skills --------------------------------->
 
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+      <!-- <p class="section__text__p1">Explore My</p> -->
       <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          
+          <!------------- Frontend -------------->
           <div class="details-container2">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/html.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -181,7 +201,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/css.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -192,18 +212,18 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/scss.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
+                  <h3>SCSS</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/js.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -214,7 +234,29 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/vue.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vue.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/vuex.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vuex</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -225,7 +267,29 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/redux.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jquery.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>jQuery</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bootstrap.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -236,12 +300,14 @@
               </article>
             </div>
           </div>
+
+          <!--------------- Backend ------------>
           <div class="details-container2">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/python.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -252,7 +318,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/mysql.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -263,18 +329,40 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/node-js.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>Node.js</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/express.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/rest.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Restful API</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/php.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -285,7 +373,7 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/git.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -296,31 +384,50 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/aws.png"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>jQuery</h3>
+                  <h3>AWS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src="./assets/azure.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Azure</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/linux.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+             
+              
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      
     </section>
 
     <!---------------------------- Projects ----------------------------->
 
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <!-- <p class="section__text__p1">Browse My Recent</p> -->
       <h1 class="title">Projects</h1>
   
       <div class="details-container color-container">
@@ -480,7 +587,11 @@
               </div>                      </div>
 
             </section>
-  
+
+
+
+  <!------------------------------------------------- Contact Section --------------------------------------------------->
+
 
             <section id="contact" class="contact">
               <div class="contact-container">
@@ -583,16 +694,7 @@
     
     
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      
       <p>Copyright &#169; 2023 Fox Web Design. All Rights Reserved.</p>
     </footer>
     

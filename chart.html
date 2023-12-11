@@ -1,0 +1,45 @@
+
+  <div id="chart_div"></div>
+  <a style="font-size:12px;color:#BDBDBD" href="https://livechatai.com/">Powered by LiveChatAI</a>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Development Domain', 'Web Development', 'Back-end Development', 'Mobile Development', 'System Programming'],
+          ['JavaScript', 1, 1, 0, 0],
+          ['TypeScript', 1, 1, 0, 0],
+          ['HTML/CSS', 1, 0, 0, 0],
+          ['React', 1, 0, 1, 0],
+          ['Angular/Vue.js', 1, 0, 0, 0],
+          ['Python', 0, 1, 1, 0],
+          ['Ruby/Java', 0, 1, 0, 0],
+          ['Django/Rails/Spring', 0, 1, 0, 0],
+          ['Swift/Kotlin', 0, 0, 1, 0],
+          ['Flutter', 0, 0, 1, 0],
+          ['C/C++/Rust/Go', 0, 0, 0, 1]
+        ]);
+
+        var options = {
+          title: 'Development Domains Overlap',
+          curveType: 'function',
+          legend: { position: 'bottom' },
+          colors: ['#1E90FF', '#32CD32', '#FF4500', '#FFD700'],
+          hAxis: {
+            title: 'Technologies',
+            textStyle: {
+              color: '#333'
+            }
+          },
+          vAxis: {
+            minValue: 0,
+            ticks: [0, 1]
+          }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+     </script>

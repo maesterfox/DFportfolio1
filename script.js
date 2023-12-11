@@ -1,3 +1,25 @@
+// JavaScript to fade out both the loader container and the image over 2 seconds, then remove the loader
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Wait for 3 seconds before starting the fade-out process
+  setTimeout(function () {
+    var loader = document.querySelector(".loader-container");
+    var image = document.querySelector(".loader-container .loader"); // Selecting the image inside the loader container
+    if (loader && image) {
+      // Start the fade-out for both the container and the image
+      loader.style.transition = "opacity 3s";
+      loader.style.opacity = 0;
+      image.style.transition = "opacity 3s";
+      image.style.opacity = 0;
+
+      // Wait for 2 seconds to complete the fade-out, then remove the loader
+      setTimeout(function () {
+        loader.remove();
+      }, 3000); // 2000 milliseconds = 2 seconds
+    }
+  }, 2500); // 3000 milliseconds = 3 seconds
+});
+
 // Menu toggler
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
